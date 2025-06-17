@@ -54,6 +54,8 @@
 .tarjeta_productos:hover{
     transform: scale(1.05) translateY(-8px);
     box-shadow: 0 8px 24px rgba(44, 62, 80, 0.18);
+    z-index: 10;
+    position: relative;
 }
 
 .boton_comprar{
