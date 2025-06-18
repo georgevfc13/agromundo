@@ -1,4 +1,4 @@
- document.getElementById('btn-play').addEventListener('click', function() {
+document.getElementById('btn-play').addEventListener('click', function() {
     // Oculta la miniatura y el botón
     document.getElementById('miniatura-video').style.opacity = 0;
     this.style.opacity = 0;
