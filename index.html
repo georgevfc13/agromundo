@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Agromundo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
@@ -16,7 +15,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
-  <body>
+  <body class="body-fade-in">
     <!-- Barra de navegacion -->
     <nav class="navbar navbar-dark bara-navegacion fixed-top">
       <div class="container-fluid">
@@ -66,7 +65,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="#productos">Productos</a>
               </li>
-
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -242,7 +240,7 @@
     <!-- fin Carrusel -->
 
     <!-- tarjetas de sobre la empresa -->
-    <div class="d-flex justify-content-center my-4" id="empresa">
+    <div class="d-flex justify-content-center my-4 fade-up" id="empresa">
       <div class="card mb-3 tarjeta_color" style="max-width: 540px">
         <div class="row g-0">
           <div class="col-md-4 d-flex align-items-stretch">
@@ -273,7 +271,7 @@
     <!-- fin de tarjetas de la empresa -->
 
     <!-- inicio de textos informativos sobre la agricultura -->
-    <div class="card" id="informacion">
+    <div class="card fade-up" id="informacion">
       <div class="card-body">
         <h5 class="card-title">
           <span>
@@ -310,9 +308,9 @@
     <!-- fin del texto -->
 
     <!-- inicio de productos -->
-    <div class="container my-4" id="productos">
+    <div class="container my-4 fade-up" id="productos">
       <div class="row justify-content-center">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 fade-up">
           <div class="card tarjeta_productos" style="width: 18rem">
             <img
               src="img/podadora.jpg"
@@ -330,7 +328,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 fade-up">
           <div class="card tarjeta_productos" style="width: 18rem">
             <img
               src="img/carretilla.webp"
@@ -349,7 +347,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 fade-up">
           <div class="card tarjeta_productos" style="width: 18rem">
             <img
               src="img/horca.webp"
@@ -368,7 +366,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 fade-up">
           <div class="card tarjeta_productos" style="width: 18rem">
             <img
               src="img/tijera.png"
@@ -391,30 +389,29 @@
     <!-- fin de productos -->
 
     <!-- inicio del video -->
-<div class="d-flex justify-content-center my-4" id="ver_video">
-  <div class="ratio ratio-16x9 video-estilizado position-relative" style="max-width: 560px; width: 100%;">
-    <!-- Miniatura -->
-    <img src="img/miniatura.jpg" alt="Miniatura video" id="miniatura-video"
-      class="w-100 h-100 position-absolute top-0 start-0" style="object-fit: cover; border-radius: 1rem; z-index:1;">
-    <!-- Botón de play -->
-    <button id="btn-play"
-      class="btn btn-success position-absolute top-50 start-50 translate-middle play-btn"
-      style="z-index:2;">
-      <i class="bi bi-play-fill fs-1"></i>
-    </button>
-    <!-- Video oculto -->
-    <div id="video-container"
-      style="opacity: 0; pointer-events: none; transition: opacity 0.7s; position:absolute; inset:0; z-index:3;">
-      <!-- El parámetro autoplay=1 hace que el video inicie automáticamente -->
-      <iframe width="100%" height="100%"
-        src="https://www.youtube.com/embed/-UW2cuYflv8?autoplay=1&rel=0"
-        title="YouTube video player" frameborder="0"
-        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="d-flex justify-content-center my-4 fade-up" id="ver_video">
+      <div class="ratio ratio-16x9 video-estilizado position-relative" style="max-width: 560px; width: 100%;">
+        <!-- Miniatura -->
+        <img src="img/miniatura.jpg" alt="Miniatura video" id="miniatura-video"
+          class="w-100 h-100 position-absolute top-0 start-0" style="object-fit: cover; border-radius: 1rem; z-index:1;">
+        <!-- Botón de play -->
+        <button id="btn-play"
+          class="btn btn-success position-absolute top-50 start-50 translate-middle play-btn"
+          style="z-index:2;">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <!-- Video oculto -->
+        <div id="video-container"
+          style="opacity: 0; pointer-events: none; transition: opacity 0.7s; position:absolute; inset:0; z-index:3;">
+          <!-- El parámetro autoplay=1 hace que el video inicie automáticamente -->
+          <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/-UW2cuYflv8?rel=0"
+            title="YouTube video player" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-  <!-- fin del video -->
-
+    <!-- fin del video -->
 
     <!-- inicio del footer -->
     <footer class="bg-dark text-white py-4 mt-5">
@@ -449,7 +446,6 @@
     <!-- fin del footer -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
