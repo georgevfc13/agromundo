@@ -61,3 +61,32 @@
 .boton_comprar{
     border-radius: 50px;
 }
+
+.video-estilizado {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.18);
+    border: 3px solid #1b5e20; /* Color acorde a tu navbar */
+    max-width: 560px;
+    width: 100%;
+    margin: auto;
+}
+
+.play-btn {
+    border-radius: 50%;
+    padding: 2em 2em;      /* Menor padding para hacerlo más pequeño */
+    font-size: 1.5rem;         /* Tamaño del ícono más pequeño */
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.18);
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    width: 48px;               /* Ancho fijo */
+    height: 48px;              /* Alto fijo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-btn:hover {
+    transform: scale(1.15);
+    background: #388e3c;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.28);
+}

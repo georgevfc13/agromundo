@@ -390,22 +390,31 @@
     </div>
     <!-- fin de productos -->
 
-    <!-- inicio de video -->
-    <div class="d-flex justify-content-center my-4" id="ver_video">
-      <div class="ratio ratio-16x9" style="max-width: 560px; width: 100%">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/-UW2cuYflv8?si=5AEXkhHhfP-iPyys"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
+    <!-- inicio del video -->
+<div class="d-flex justify-content-center my-4" id="ver_video">
+  <div class="ratio ratio-16x9 video-estilizado position-relative" style="max-width: 560px; width: 100%;">
+    <!-- Miniatura -->
+    <img src="img/miniatura.jpg" alt="Miniatura video" id="miniatura-video"
+      class="w-100 h-100 position-absolute top-0 start-0" style="object-fit: cover; border-radius: 1rem; z-index:1;">
+    <!-- Botón de play -->
+    <button id="btn-play"
+      class="btn btn-success position-absolute top-50 start-50 translate-middle play-btn"
+      style="z-index:2;">
+      <i class="bi bi-play-fill fs-1"></i>
+    </button>
+    <!-- Video oculto -->
+    <div id="video-container"
+      style="opacity: 0; pointer-events: none; transition: opacity 0.7s; position:absolute; inset:0; z-index:3;">
+      <!-- El parámetro autoplay=1 hace que el video inicie automáticamente -->
+      <iframe width="100%" height="100%"
+        src="https://www.youtube.com/embed/-UW2cuYflv8?autoplay=1&rel=0"
+        title="YouTube video player" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-    <!-- fin del video -->
+  </div>
+</div>
+  <!-- fin del video -->
+
 
     <!-- inicio del footer -->
     <footer class="bg-dark text-white py-4 mt-5">
@@ -443,5 +452,6 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
