@@ -32,3 +32,19 @@ document.getElementById('btn-play').addEventListener('click', function() {
       video.style.opacity = 1;
     }, 400);
 });
+
+window.addEventListener('scroll', function() {
+    const btn = document.getElementById('scrollToTopBtn');
+    if (window.scrollY > 300) {
+        btn.style.display = 'flex';
+    } else {
+        btn.style.display = 'none';
+    }
+});
+
+document.getElementById('scrollToTopBtn').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
