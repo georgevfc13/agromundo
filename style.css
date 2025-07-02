@@ -20,7 +20,6 @@
     height: 100%;
     border: 0.5rem;
     display: block;
-    /* para el degradado de la imagen */
     position: relative;
     z-index: 1;
 }
@@ -32,7 +31,7 @@
     border-radius: 0.5rem;
     background: linear-gradient(135deg, rgba(0,0,0,0.15) 0%, rgba(255,255,255,0.10) 100%);
     z-index: 2;
-    pointer-events: none; /* Permite que los eventos del mouse pasen a la imagen */
+    pointer-events: none; 
 }
 
 .tarjeta_color{
@@ -66,7 +65,7 @@
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 4px 24px rgba(44, 62, 80, 0.18);
-    border: 3px solid #1b5e20; /* Color acorde a tu navbar */
+    border: 3px solid #1b5e20; 
     max-width: 560px;
     width: 100%;
     margin: auto;
@@ -90,7 +89,6 @@
     box-shadow: 0 8px 32px rgba(44, 62, 80, 0.28);
 }
 
-/* Animación de aparición desde abajo */
 .fade-up {
     opacity: 0;
     transform: translateY(40px);
@@ -102,7 +100,6 @@
     transform: translateY(0);
 }
 
-/* Animación de entrada general al cargar la página */
 .body-fade-in {
     opacity: 0;
     transition: opacity 1s;
